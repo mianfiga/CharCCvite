@@ -1,0 +1,34 @@
+.bar_container{
+    width: 420px;
+    height: 70px;
+    margin-left: 10px;
+    margin-bottom: 24px;
+    border-radius: 20px;
+    background-color: #5E5E5E;
+    align-content: center;
+}
+
+.bar_container img{
+    align-content: center;
+    height: 28px;
+    width: 28px;
+}
+
+.image_container{
+    justify-content: center;
+    display: inline-grid;
+    align-content: center;
+    height: 49px;
+    width: 84px;
+}
+
+.image_container img{
+    justify-self: center;
+    align-self: center;
+}
+
+.image_container span{
+    font-size: 14;
+    color: white;
+    text-align: left;
+}

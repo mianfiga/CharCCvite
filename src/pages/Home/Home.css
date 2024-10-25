@@ -1,3 +1,9 @@
-*{
-    background-color: E9E9E9;
+.home_container {
+    width: 440px;
+    height: 956px;
+    background: linear-gradient(211.86deg, #FFFFFF 38.19%, #100E10 112.58%);
+}
+
+.home_content {
+    height: 862px;
 }
