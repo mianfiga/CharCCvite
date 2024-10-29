@@ -1,5 +1,5 @@
 import "./MenuBar.css"
-import { NEW, EXPLORE, HOME, LIBRARY, SETTINGS } from "../../helpers/icons"
+import { NEW, EXPLORE, HOME, LIBRARY, SETTINGS } from "../../helpers/menu_bar_icons.js"
 
 function MenuBar() {
     return (
