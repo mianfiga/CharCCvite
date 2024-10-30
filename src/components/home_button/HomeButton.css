@@ -3,4 +3,14 @@
     height: 120px;
     border: 1px solid #A6A6A6;
     border-radius: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_container img{
+    height: min-content;
+    width: min-content;
+    margin-bottom: 2px;
 }
