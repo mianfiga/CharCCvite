@@ -1,9 +1,9 @@
 .bar_container{
-    width: 420px;
-    height: 70px;
-    margin-left: 10px;
-    margin-bottom: 24px;
+    width: 98%;
+    height: 4.5em;
     border-radius: 20px;
     background-color: #5E5E5E;
-    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

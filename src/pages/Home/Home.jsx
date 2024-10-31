@@ -1,6 +1,7 @@
-import MenuBar from "../../components/menu_bar/MenuBar.js";
+import React from "react";
+import MenuBar from "../../components/menu_bar/MenuBar";
 import "./Home.css";
-import HomeButton from "../../components/home_button/HomeButton.js";
+import HomeButton from "../../components/home_button/HomeButton";
 import {
   THROWS,
   STATS,
@@ -14,7 +15,7 @@ import {
   ATEXT,
   LTEXT,
   ETEXT,
-} from "../../helpers/home_icons.js";
+} from "../../helpers/home_icons";
 
 function Home() {
   return (
@@ -24,9 +25,13 @@ function Home() {
           <div className="char_name">
             <span>PEPE VIYUELA</span>
           </div>
-          <img src="/icons/Character/character.svg" alt="character" className="char_image" />
+          <img
+            src="/icons/Character/character.svg"
+            alt="character"
+            className="char_image"
+          />
           <div className="upper_buttons_container">
-            <HomeButton image={THROWS} text={TTEXT} />
+            <HomeButton image={THROWS} text={TTEXT}>hola</HomeButton>
             <HomeButton image={STATS} text={STEXT} />
             <HomeButton image={INFO} text={ITEXT} />
             <HomeButton image={ACTIONS} text={ATEXT} />
@@ -36,8 +41,9 @@ function Home() {
             <HomeButton image={EQUIPMENT} text={ETEXT} />
           </div>
         </div>
-
-        <MenuBar />
+        <div className="bar_container">
+          <MenuBar selectedButton={"HOME"} />
+        </div>
       </div>
     </>
   );

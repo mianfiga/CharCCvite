@@ -1,9 +1,10 @@
+import React from "react";
 import "./MenuBarButton.css";
 
-function MenuBarButton({ image, text }) {
+function MenuBarButton({ image, text, isSelected }) {
   return (
     <>
-      <div className="bar_button_container">
+      <div className={`bar_button_container ${isSelected ? "selected" : ""}`}>
         <div className="bar_image_container">
           <img src={image} alt="add" />
         </div>

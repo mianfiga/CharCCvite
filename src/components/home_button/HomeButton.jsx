@@ -1,10 +1,14 @@
+import React from "react";
 import "./HomeButton.css";
 
-function HomeButton({ image, text }) {
+function HomeButton({ image, text, children }) {
   return (
     <div className="button_container">
       <img src={image} alt="icon" />
       <span>{text}</span>
+      <div className="button_content">
+        {children}
+      </div>
     </div>
   );
 }
