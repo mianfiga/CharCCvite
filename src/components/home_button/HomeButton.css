@@ -1,6 +1,6 @@
 .button_container {
-  width: 97px;
-  height: 120px;
+  width: 100px;
+  height: 140px;
   border: 1px solid #a6a6a6;
   border-radius: 19px;
   display: flex;
@@ -18,14 +18,15 @@
 }
 
 .button_expanded {
-  width: 98%;
-  height: 320%;
-  position: absolute;
+  width: 99vw;
+  height: 83vh;
+  position: relative;
   color: white;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 999;
+  overflow: visible;
 }
 
 .button_expanded img {

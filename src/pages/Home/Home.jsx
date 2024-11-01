@@ -30,20 +30,28 @@ function Home() {
             alt="character"
             className="char_image"
           />
-          <div className="upper_buttons_container">
-            <HomeButton image={THROWS} text={TTEXT}>hola</HomeButton>
-            <HomeButton image={STATS} text={STEXT} />
-            <HomeButton image={INFO} text={ITEXT} />
-            <HomeButton image={ACTIONS} text={ATEXT} />
+          <div className="left_buttons_container">
+            <HomeButton image={THROWS} text={TTEXT}>
+              hola
+            </HomeButton>
+            <div className="upper_buttons_container">
+              <HomeButton image={INFO} text={ITEXT} />
+            </div>
+            <div className="lower_buttons_container">
+              <HomeButton image={LEVELUP} text={LTEXT} />
+            </div>
           </div>
-          <div className="lower_buttons_container">
-            <HomeButton image={LEVELUP} text={LTEXT} />
-            <HomeButton image={EQUIPMENT} text={ETEXT} />
+          <div className="right_buttons_container">
+            <div className="upper_buttons_container">
+              <HomeButton image={STATS} text={STEXT} />
+              <HomeButton image={ACTIONS} text={ATEXT} />
+            </div>
+            <div className="lower_buttons_container">
+              <HomeButton image={EQUIPMENT} text={ETEXT} />
+            </div>
           </div>
         </div>
-        <div className="bar_container">
-          <MenuBar selectedButton={"HOME"} />
-        </div>
+        <MenuBar selectedButton={"HOME"} />
       </div>
     </>
   );
