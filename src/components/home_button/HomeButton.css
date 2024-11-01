@@ -18,15 +18,21 @@
 }
 
 .button_expanded {
-  width: 99vw;
-  height: 83vh;
-  position: relative;
-  color: white;
+  width: 96.5vw;
+  height: 87vh;
+  position: fixed;
+  color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   z-index: 999;
   overflow: visible;
+  top: 1em;
+  left: 0.5em;
+}
+
+.button_text {
+  visibility: hidden;
 }
 
 .button_expanded img {

@@ -16,6 +16,7 @@ import {
   LTEXT,
   ETEXT,
 } from "../../helpers/home_icons";
+import ThrowsContent from "../../components/throws_content/ThrowsContent";
 
 function Home() {
   return (
@@ -32,7 +33,7 @@ function Home() {
           />
           <div className="left_buttons_container">
             <HomeButton image={THROWS} text={TTEXT}>
-              hola
+              <ThrowsContent />
             </HomeButton>
             <div className="upper_buttons_container">
               <HomeButton image={INFO} text={ITEXT} />

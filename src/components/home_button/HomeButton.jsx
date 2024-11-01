@@ -5,7 +5,7 @@ function HomeButton({ image, text, children }) {
   return (
     <div className="button_container">
       <img src={image} alt="icon" />
-      <span>{text}</span>
+      <span className="button_text">{text}</span>
       <div className="button_content">
         {children}
       </div>
