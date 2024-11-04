@@ -36,10 +36,10 @@ function Home() {
           <div className="left_buttons_container">
             <div className="upper_buttons_container">
               <HomeButton image={THROWS} text={TTEXT}>
-                {/* <ThrowsContent /> */}
+                <ThrowsContent />
               </HomeButton>
               <HomeButton image={INFO} text={ITEXT}>
-                {/* <InfoContent /> */}
+                <InfoContent />
               </HomeButton> 
             </div>
             <div className="lower_buttons_container">
@@ -49,7 +49,7 @@ function Home() {
           <div className="right_buttons_container">
             <div className="upper_buttons_container">
               <HomeButton image={STATS} text={STEXT}>
-                {/* <StatsContent /> */}
+                <StatsContent />
               </HomeButton>
               <HomeButton image={ACTIONS} text={ATEXT} />
             </div>
