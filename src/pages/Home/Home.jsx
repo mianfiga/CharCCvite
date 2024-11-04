@@ -17,6 +17,7 @@ import {
   ETEXT,
 } from "../../helpers/home_icons";
 import ThrowsContent from "../../components/throws_content/ThrowsContent";
+import InfoContent from "../../components/info_content/InfoContent";
 
 function Home() {
   return (
@@ -32,11 +33,13 @@ function Home() {
             className="char_image"
           />
           <div className="left_buttons_container">
-            <HomeButton image={THROWS} text={TTEXT}>
-              <ThrowsContent />
-            </HomeButton>
             <div className="upper_buttons_container">
-              <HomeButton image={INFO} text={ITEXT} />
+              <HomeButton image={THROWS} text={TTEXT}>
+                {/* <ThrowsContent /> */}
+              </HomeButton>
+              <HomeButton image={INFO} text={ITEXT}>
+                <InfoContent />
+              </HomeButton> 
             </div>
             <div className="lower_buttons_container">
               <HomeButton image={LEVELUP} text={LTEXT} />
