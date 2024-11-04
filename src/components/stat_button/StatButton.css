@@ -1,9 +1,35 @@
+.stat_button_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #A6A6A6;
+    border-radius: 16px;
+    width: 7.6em;
+}
+
+.stat_button_container img{
+    margin: 10px;
+}
+
 .advantage_container{
     background-color: #515151;
-    border-radius: 18px;
     display: flex;
+    border-radius: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 10vw;
+    width: 122px;
+    height: 36px;
+}
+
+.advantage_container img{
+    align-self: last baseline;
+    margin: auto;
+}
+
+.advantage_container span{
+    font-size: 34px;
+    color: white;
+    width: 36px;
+    text-align: center;
 }
