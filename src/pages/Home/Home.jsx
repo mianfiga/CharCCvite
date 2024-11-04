@@ -49,7 +49,7 @@ function Home() {
           <div className="right_buttons_container">
             <div className="upper_buttons_container">
               <HomeButton image={STATS} text={STEXT}>
-                <StatsContent />
+                {/* <StatsContent /> */}
               </HomeButton>
               <HomeButton image={ACTIONS} text={ATEXT} />
             </div>
