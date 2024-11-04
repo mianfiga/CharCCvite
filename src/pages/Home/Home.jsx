@@ -18,6 +18,7 @@ import {
 } from "../../helpers/home_icons";
 import ThrowsContent from "../../components/throws_content/ThrowsContent";
 import InfoContent from "../../components/info_content/InfoContent";
+import StatsContent from "../../components/stats_content/StatsContent";
 
 function Home() {
   return (
@@ -38,7 +39,7 @@ function Home() {
                 {/* <ThrowsContent /> */}
               </HomeButton>
               <HomeButton image={INFO} text={ITEXT}>
-                <InfoContent />
+                {/* <InfoContent /> */}
               </HomeButton> 
             </div>
             <div className="lower_buttons_container">
@@ -47,7 +48,9 @@ function Home() {
           </div>
           <div className="right_buttons_container">
             <div className="upper_buttons_container">
-              <HomeButton image={STATS} text={STEXT} />
+              <HomeButton image={STATS} text={STEXT}>
+                <StatsContent />
+              </HomeButton>
               <HomeButton image={ACTIONS} text={ATEXT} />
             </div>
             <div className="lower_buttons_container">
