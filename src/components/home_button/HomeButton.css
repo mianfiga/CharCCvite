@@ -17,10 +17,9 @@
   margin-bottom: 2px;
 }
 
-.button_expanded {
+.button_container.button_expanded {
   width: 96.5vw;
   height: 87vh;
-  position: fixed;
   color: black;
   display: flex;
   justify-content: flex-start;
@@ -28,13 +27,48 @@
   z-index: 999;
   overflow: visible;
   top: 1em;
-  left: 0.5em;
 }
 
-.button_text {
+.previous_hidden {
   visibility: hidden;
 }
 
 .button_expanded img {
     margin-top: 50px;
+}
+
+.throws_button{
+  position: absolute;
+  top: 2.5em;
+  left: 0.5em;
+}
+
+.info_button{
+  position: absolute;
+  top: 12.5em;
+  left: 0.5em;
+}
+
+.level_button{
+  position: absolute;
+  top: 41em;
+  left: 0.5em;
+}
+
+.stats_button{
+  position: absolute;
+  top: 2.5em;
+  right: 0.5em;
+}
+
+.actions_button{
+  position: absolute;
+  top: 12.5em;
+  right: 0.5em;
+}
+
+.equipment_button{
+  position: absolute;
+  top: 41em;
+  right: 0.5em;
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import "./StatsContent.css";
-import { PREVIOUS } from "../../helpers/utility_icons";
 import StatInfo from "../stat_info/StatInfo";
 import {
   AC,
@@ -18,9 +17,6 @@ function StatsContent() {
   return (
     <>
       <div className="stats_content_container">
-        <div className="previous_container">
-          <img src={PREVIOUS} alt="img" />
-        </div>
         <div className="stats_info_grid">
           <StatInfo statImage={STRENGTH} statValue={15} />
           <StatInfo statImage={DEXTERITY} statValue={16} />

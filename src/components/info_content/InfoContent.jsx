@@ -6,9 +6,6 @@ function InfoContent() {
   return (
     <>
       <div className="info_content_container">
-        <div className="previous_container">
-          <img src={PREVIOUS} alt="img" />
-        </div>
         <div className="info_display_medium">
           <span>NAME</span>
         </div>

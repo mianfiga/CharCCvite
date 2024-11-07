@@ -15,9 +15,6 @@ function ThrowsContent() {
   return (
     <>
       <div className="throws_content_container">
-        <div className="previous_container">
-          <img src={PREVIOUS} alt="img" />
-        </div>
         <span className="stats_based_text">STATS BASED THROWS</span>
         <div className="stats_based_throws">
           <StatButton statIcon={STRENGTH} statValue={15} />

@@ -19,6 +19,7 @@ import {
 import ThrowsContent from "../../components/throws_content/ThrowsContent";
 import InfoContent from "../../components/info_content/InfoContent";
 import StatsContent from "../../components/stats_content/StatsContent";
+import ActionsContent from "../../components/actions_content/ActionsContent";
 
 function Home() {
   return (
@@ -33,30 +34,24 @@ function Home() {
             alt="character"
             className="char_image"
           />
-          <div className="left_buttons_container">
-            <div className="upper_buttons_container">
-              <HomeButton image={THROWS} text={TTEXT}>
-                <ThrowsContent />
-              </HomeButton>
-              <HomeButton image={INFO} text={ITEXT}>
-                <InfoContent />
-              </HomeButton> 
-            </div>
-            <div className="lower_buttons_container">
-              <HomeButton image={LEVELUP} text={LTEXT} />
-            </div>
-          </div>
-          <div className="right_buttons_container">
-            <div className="upper_buttons_container">
-              <HomeButton image={STATS} text={STEXT}>
-                <StatsContent />
-              </HomeButton>
-              <HomeButton image={ACTIONS} text={ATEXT} />
-            </div>
-            <div className="lower_buttons_container">
-              <HomeButton image={EQUIPMENT} text={ETEXT} />
-            </div>
-          </div>
+          <HomeButton image={THROWS} text={TTEXT} className="throws_button">
+            <ThrowsContent />
+          </HomeButton>
+          <HomeButton image={INFO} text={ITEXT} className="info_button">
+            <InfoContent />
+          </HomeButton>
+          <HomeButton image={LEVELUP} text={LTEXT} className="level_button" />
+          <HomeButton image={STATS} text={STEXT} className="stats_button">
+            <StatsContent />
+          </HomeButton>
+          <HomeButton image={ACTIONS} text={ATEXT} className="actions_button">
+            <ActionsContent />
+          </HomeButton>
+          <HomeButton
+            image={EQUIPMENT}
+            text={ETEXT}
+            className="equipment_button"
+          />
         </div>
         <MenuBar selectedButton={"HOME"} />
       </div>
