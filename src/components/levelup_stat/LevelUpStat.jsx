@@ -7,7 +7,7 @@ function LevelUpStat({ statImage, statValue }) {
     <>
       <div className="levelup_stat_container">
         <img src={statImage} alt="img" />
-        <div className="advantage_container">
+        <div className="stat_up_container">
           <img src={MINUS} alt="minus" />
           <span>{statValue}</span>
           <img src={PLUS} alt="plus" />

@@ -12,16 +12,26 @@
     height: 55px;
 }
 
-.advantage_container{
+.stat_up_container{
     width: 4em;
     height: 1.4em;
+    background-color: #515151;
+    display: flex;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.advantage_container img{
+.stat_up_container img{
     width: 26px;
     height: 26px;
+    align-self: last baseline;
+    margin: auto;
 }
 
-.advantage_container span{
+.stat_up_container span{
     font-size: 27px;
+    color: white;
 }
