@@ -1,37 +1,37 @@
-.levelup_stat_container{
-    margin-top: -1em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5em;
+.levelup_stat_container {
+  margin-top: -1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
 }
 
-.levelup_stat_container img{
-    width: 55px;
-    height: 55px;
+.levelup_stat_container img {
+  width: 55px;
+  height: 55px;
 }
 
-.stat_up_container{
-    width: 4em;
-    height: 1.4em;
-    background-color: #515151;
-    display: flex;
-    border-radius: 20px;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.stat_up_container {
+  width: 4em;
+  height: 1.4em;
+  background-color: #515151;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
-.stat_up_container img{
-    width: 26px;
-    height: 26px;
-    align-self: last baseline;
-    margin: auto;
+.stat_up_container img {
+  width: 26px;
+  height: 26px;
+  align-self: last baseline;
+  margin: auto;
 }
 
-.stat_up_container span{
-    font-size: 27px;
-    color: white;
+.stat_up_container span {
+  font-size: 27px;
+  color: white;
 }
