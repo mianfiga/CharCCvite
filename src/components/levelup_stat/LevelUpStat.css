@@ -1,0 +1,27 @@
+.levelup_stat_container{
+    margin-top: -1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.levelup_stat_container img{
+    width: 55px;
+    height: 55px;
+}
+
+.advantage_container{
+    width: 4em;
+    height: 1.4em;
+}
+
+.advantage_container img{
+    width: 26px;
+    height: 26px;
+}
+
+.advantage_container span{
+    font-size: 27px;
+}
