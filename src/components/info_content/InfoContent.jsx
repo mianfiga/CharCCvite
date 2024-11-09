@@ -1,6 +1,5 @@
 import React from "react";
 import "./InfoContent.css";
-import { PREVIOUS } from "../../helpers/utility_icons";
 
 function InfoContent() {
   return (

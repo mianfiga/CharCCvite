@@ -9,7 +9,6 @@ import {
   STRENGTH,
   WISDOM,
 } from "../../helpers/stats_icons";
-import { PREVIOUS } from "../../helpers/utility_icons";
 
 function ThrowsContent() {
   return (

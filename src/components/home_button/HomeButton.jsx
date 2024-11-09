@@ -20,7 +20,10 @@ function HomeButton({ image, text, children, className }) {
           <img src={PREVIOUS} alt="img" />
       </div>
       <img src={image} alt="icon" />
-      <span className="button_text">{text}</span>
+      {expanded ? null 
+      : (
+        <span className="button_text">{text}</span>
+      ) }
       {expanded ? (
         <div className="button_content">
         {children}

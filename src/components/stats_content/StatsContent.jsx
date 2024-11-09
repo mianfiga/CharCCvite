@@ -12,6 +12,7 @@ import {
   WISDOM,
   XP,
 } from "../../helpers/stats_icons";
+import { Progress } from "antd";
 
 function StatsContent() {
   return (
@@ -28,11 +29,25 @@ function StatsContent() {
         <div className="hp_xp_container">
           <div className="hp_container">
             <img src={HP} alt="hp" />
+            <Progress
+              percent={50}
+              percentPosition={{ align: "center", type: "outer" }}
+              showInfo={false}
+              size={[400, 10]}
+              strokeColor="#D82596"
+            />
             <span>8/16 HP</span>
           </div>
           <div className="xp_container">
             <img src={XP} alt="xp" />
-            <span>200/400 EXP</span>
+            <Progress
+              percent={50}
+              percentPosition={{ align: "center", type: "outer" }}
+              showInfo={false}
+              size={[400, 10]}
+              strokeColor="#D82596"
+            />
+            <span>50/100 EXP</span>
           </div>
         </div>
         <StatInfo statImage={AC} statValue={10} />

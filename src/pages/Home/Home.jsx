@@ -20,6 +20,7 @@ import ThrowsContent from "../../components/throws_content/ThrowsContent";
 import InfoContent from "../../components/info_content/InfoContent";
 import StatsContent from "../../components/stats_content/StatsContent";
 import ActionsContent from "../../components/actions_content/ActionsContent";
+import LevelUpContent from "../../components/levelup_content/LevelUpContent";
 
 function Home() {
   return (
@@ -40,7 +41,9 @@ function Home() {
           <HomeButton image={INFO} text={ITEXT} className="info_button">
             <InfoContent />
           </HomeButton>
-          <HomeButton image={LEVELUP} text={LTEXT} className="level_button" />
+          <HomeButton image={LEVELUP} text={LTEXT} className="level_button">
+            <LevelUpContent expLevel={2}expCount={50}/>
+          </HomeButton>
           <HomeButton image={STATS} text={STEXT} className="stats_button">
             <StatsContent />
           </HomeButton>
