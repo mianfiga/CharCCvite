@@ -59,6 +59,7 @@ function ActionsContent() {
           menu={{
             items,
           }}
+          trigger={["click"]}
         >
           <a onClick={(e) => e.preventDefault()}>
             <Space>
