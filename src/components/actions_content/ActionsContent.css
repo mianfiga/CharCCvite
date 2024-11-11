@@ -1,4 +1,10 @@
-.weapon{
+.actions_content_container{
     color: white;
     background-color: #515151;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+

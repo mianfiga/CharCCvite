@@ -1,73 +1,82 @@
 import React from "react";
-import { PREVIOUS } from "../../helpers/utility_icons";
 import "./ActionsContent.css";
-import { DownOutlined, SmileOutlined } from "@ant-design/icons";
-import { Dropdown, Space } from "antd";
-
-const items = [
-  {
-    key: "1",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        1st menu item
-      </a>
-    ),
-  },
-  {
-    key: "2",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
-      >
-        2nd menu item (disabled)
-      </a>
-    ),
-    icon: <SmileOutlined />,
-    disabled: true,
-  },
-  {
-    key: "3",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item (disabled)
-      </a>
-    ),
-    disabled: true,
-  },
-  {
-    key: "4",
-    danger: true,
-    label: "a danger item",
-  },
-];
+import { Select, Space } from "antd";
+const handleChange = (value) => {
+  console.log(`selected ${value}`);
+};
 
 function ActionsContent() {
   return (
     <>
       <div className="actions_content_container">
-        <Dropdown
-          menu={{
-            items,
-          }}
-          trigger={["click"]}
-        >
-          <a onClick={(e) => e.preventDefault()}>
-            <Space>
-              Hover me
-              <DownOutlined />
-            </Space>
-          </a>
-        </Dropdown>
+        <Space wrap>
+          <Select
+            defaultValue="lucy"
+            style={{
+              width: 120,
+            }}
+            onChange={handleChange}
+            options={[
+              {
+                value: "jack",
+                label: <div className="aaa">jack</div>
+              },
+              {
+                value: "lucy",
+                label: <div className="aaa">lucy</div>,
+              },
+              {
+                value: "Yiminghe",
+                label: "yiminghe",
+              },
+              {
+                value: "disabled",
+                label: "Disabled",
+                disabled: true,
+              },
+            ]}
+          />
+          <Select
+            defaultValue="lucy"
+            style={{
+              width: 120,
+            }}
+            disabled
+            options={[
+              {
+                value: "lucy",
+                label: "Lucy",
+              },
+            ]}
+          />
+          <Select
+            defaultValue="lucy"
+            style={{
+              width: 120,
+            }}
+            loading
+            options={[
+              {
+                value: "lucy",
+                label: "Lucy",
+              },
+            ]}
+          />
+          <Select
+            defaultValue="lucy"
+            style={{
+              width: 120,
+            }}
+            allowClear
+            options={[
+              {
+                value: "lucy",
+                label: "Lucy",
+              },
+            ]}
+            placeholder="select it"
+          />
+        </Space>
       </div>
     </>
   );
