@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './pages/Home/Home';
 import Explore from './pages/Explore/Explore';
 import MenuBar from './components/menu_bar/MenuBar';
+import WeaponSelect from './components/weapon_select/WeaponSelect';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
