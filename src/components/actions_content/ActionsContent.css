@@ -1,5 +1,35 @@
 .actions_content_container{
     color: white;
-    background-color: #515151;
     width: 80vw;
 }
+
+.ant-select-selector{
+    color: black;
+    background-color: #515151;
+}
+
+.name_container {
+    width: 40vw;
+}
+  
+  .attack_container {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .damage_container {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .damage_type {
+    width: 10vw;
+    display: flex;
+  }
+  
+  .select_image {
+      width: 18px;
+      height: 18px;
+  }

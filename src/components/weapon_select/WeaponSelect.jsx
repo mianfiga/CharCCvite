@@ -20,24 +20,11 @@ function WeaponSelect() {
             <img src={w.damageDice} alt="" className="select_image" />
             <span>+{w.damageSum}</span>
           </div>
-
           <span className="damage_type">
-            <img src={SLASH} alt="" />
+            <img src={w.damageType} alt="" />
           </span>
         </div>
       ))}
-      {/* <div className="weapon_container">
-        <span>Battleaxe</span>
-        <span>
-          1 <img src={D20} alt="" className="select_image" />
-          +5
-        </span>
-        <span>
-          1 <img src={D6} alt="" className="select_image" />
-          +3
-        </span>
-        <img src={SLASH} alt="" className="select_image" />
-      </div> */}
     </>
   );
 }
