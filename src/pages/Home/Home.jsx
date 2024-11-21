@@ -21,6 +21,7 @@ import InfoContent from "../../components/info_content/InfoContent";
 import StatsContent from "../../components/stats_content/StatsContent";
 import ActionsContent from "../../components/actions_content/ActionsContent";
 import LevelUpContent from "../../components/levelup_content/LevelUpContent";
+import EquipmentContent from "../../components/equipment_content/EquipmentContent";
 
 function Home() {
   return (
@@ -42,7 +43,7 @@ function Home() {
             <InfoContent />
           </HomeButton>
           <HomeButton image={LEVELUP} text={LTEXT} className="level_button">
-            <LevelUpContent expLevel={2}expCount={50}/>
+            <LevelUpContent expLevel={2} expCount={50} />
           </HomeButton>
           <HomeButton image={STATS} text={STEXT} className="stats_button">
             <StatsContent />
@@ -50,11 +51,9 @@ function Home() {
           <HomeButton image={ACTIONS} text={ATEXT} className="actions_button">
             <ActionsContent />
           </HomeButton>
-          <HomeButton
-            image={EQUIPMENT}
-            text={ETEXT}
-            className="equipment_button"
-          />
+          <HomeButton image={EQUIPMENT} text={ETEXT} className="equipment_button">
+            <EquipmentContent />
+          </HomeButton>
         </div>
         <MenuBar selectedButton={"HOME"} />
       </div>

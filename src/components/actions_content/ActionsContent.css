@@ -1,35 +1,67 @@
-.actions_content_container{
-    color: white;
-    width: 80vw;
+.actions_content_container {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  gap: 1em;
 }
 
-.ant-select-selector{
-    color: black;
-    background-color: #515151;
+
+.actions_header {
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  width: 27vw;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: #d82596;
+  text-align: center;
+  text-justify: center;
 }
 
-.name_container {
-    width: 40vw;
+.attack_throws {
+  margin-top: -3em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
 }
-  
-  .attack_container {
-    width: 20vw;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .damage_container {
-    width: 20vw;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .damage_type {
-    width: 10vw;
-    display: flex;
-  }
-  
-  .select_image {
-      width: 18px;
-      height: 18px;
-  }
+
+.attack_throw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.damage_throw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.attack_throw_button{
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d82596;
+  text-align: center;
+  text-justify: center;
+  width: 18vw;
+  padding: 3px;
+}
+
+.damage_throw_button{
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #d82596;
+  text-align: center;
+  text-justify: center;
+  width: 18vw;
+  padding: 3px;
+}

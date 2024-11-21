@@ -1,58 +1,41 @@
 import React from "react";
 import "./ActionsContent.css";
-import { Select, Form } from "antd";
-import weapons from "../../helpers/weapons";
-import { SLASH } from "../../helpers/damage_types";
-import FormItem from "antd/es/form/FormItem";
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
+import WeaponSelector from "../weapon_selector/WeaponSelector";
+import { D20black, D6black } from "../../helpers/dice";
 
 function ActionsContent() {
   return (
     <>
       <div className="actions_content_container">
-        <Form>
-          <FormItem>
-            <Select
-              style={{ width: "80vw" }}
-              defaultValue="Select your weapon"
-              onChange={handleChange}
-              labelRender={(value)=>value.value}
-              options={weapons.map((w) => {
-                return {
-                  value: w.name,
-                  label: (
-                    <div className="weapon_container">
-                      <span className="name_container">{w.name}</span>
-                      <div className="attack_container">
-                        <span>{w.attackQDice}</span>
-                        <img
-                          src={w.attackDice}
-                          alt=""
-                          className="select_image"
-                        />
-                        <span>+{w.attackSum}</span>
-                      </div>
-                      <div className="damage_container">
-                        <span>{w.damageQDice} </span>
-                        <img
-                          src={w.damageDice}
-                          alt=""
-                          className="select_image"
-                        />
-                        <span>+{w.damageSum}</span>
-                      </div>
-                      <span className="damage_type">
-                        <img src={w.damageType} alt="" />
-                      </span>
-                    </div>
-                  ),
-                };
-              })}
-            />
-          </FormItem>
-        </Form>
+        <div className="actions_header">ATTACK</div>
+        <div className="weapon_selector_container">
+          <WeaponSelector />
+        </div>
+        <div className="attack_throws">
+          <div className="attack_throw">
+            <img className="black_dice" src={D20black} alt="" />
+            <div className="attack_throw_button">ATTACK THROW</div>
+          </div>
+          <div className="damage_throw">
+            <img className="black_dice" src={D6black} alt="" />
+            <div className="damage_throw_button">DAMAGE THROW</div>
+          </div>
+        </div>
+
+        <div className="actions_header">SPELLS</div>
+        <div className="spells_selector_container">
+          <WeaponSelector />
+        </div>
+        <div className="attack_throws">
+          <div className="attack_throw">
+            <img className="black_dice" src={D20black} alt="" />
+            <div className="attack_throw_button">ATTACK THROW</div>
+          </div>
+          <div className="damage_throw">
+            <img className="black_dice" src={D6black} alt="" />
+            <div className="damage_throw_button">DAMAGE THROW</div>
+          </div>
+        </div>
       </div>
     </>
   );

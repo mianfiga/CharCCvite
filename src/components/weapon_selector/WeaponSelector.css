@@ -1,0 +1,70 @@
+:where(.css-dev-only-do-not-override-apn68).ant-select .ant-select-arrow {
+    color: white;
+  }
+  
+  :where(.css-dev-only-do-not-override-apn68).ant-select-outlined:not(.ant-select-customize-input) .ant-select-selector{
+    background-color: #515151;
+    color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+  }
+  
+  :where(.css-dev-only-do-not-override-apn68).ant-select-single.ant-select-show-arrow .ant-select-selection-item, :where(.css-dev-only-do-not-override-apn68).ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder{
+    color: white;
+  }
+  
+  :where(.css-dev-only-do-not-override-apn68).ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled){
+    background-color: #d82596;
+  }
+  
+  .weapon_container_header{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-left: 1em;
+  }
+  
+  .name_container {
+      width: 40vw;
+  }
+  
+  .name_header {
+    width: 35vw;
+  }
+    
+    .attack_container {
+      width: 20vw;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .attack_header {
+      width: 17vw;
+    }
+    
+    .damage_container {
+      width: 20vw;
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .damage_header {
+      width: 17vw;
+    }
+    
+    .damage_type {
+      width: 10vw;
+      display: flex;
+    }
+  
+    .type_header {
+      width: 10vw;
+    }
+    
+    .select_image {
+        width: 18px;
+        height: 18px;
+    }
+
+    
