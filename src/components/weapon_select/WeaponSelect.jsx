@@ -1,7 +1,5 @@
 import React from "react";
 import "./WeaponSelect.css";
-import { D20, D6 } from "../../helpers/dice";
-import { SLASH } from "../../helpers/damage_types";
 import weapons from "../../helpers/weapons";
 
 function WeaponSelect() {

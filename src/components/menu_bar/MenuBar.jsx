@@ -27,26 +27,31 @@ function MenuBar({ selectedButton }) {
           image={selectedButton === "NEW" ? SELNEW : NEW}
           text={TNEW}
           isSelected={selectedButton === "NEW"}
+          path={"/new_1"}
         />
         <MenuBarButton
           image={selectedButton === "EXPLORE" ? SELEXPLORE : EXPLORE}
           text={TEXPLORE}
           isSelected={selectedButton === "EXPLORE"}
+          path={"/explore"}
         />
         <MenuBarButton
           image={selectedButton === "HOME" ? SELHOME : HOME}
           text={THOME}
           isSelected={selectedButton === "HOME"}
+          path={"/home"}
         />
         <MenuBarButton
           image={selectedButton === "LIBRARY" ? SELLIBRARY : LIBRARY}
           text={TLIBRARY}
           isSelected={selectedButton === "LIBRARY"}
+          path={"/library"}
         />
         <MenuBarButton
           image={selectedButton === "SETTINGS" ? SELSETTINGS : SETTINGS}
           text={TSETTINGS}
           isSelected={selectedButton === "SETTINGS"}
+          path={"/settings"}
         />
       </div>
     </>

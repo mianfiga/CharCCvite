@@ -12,6 +12,10 @@
   font-size: 14px;
 }
 
+.weapon_container img{
+  margin: 0;
+}
+
 .name_container {
   width: 40vw;
 }

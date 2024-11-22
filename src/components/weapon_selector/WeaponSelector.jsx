@@ -10,8 +10,6 @@ const handleChange = (value) => {
 function WeaponSelector() {
   return (
     <>
-      <Form>
-        <FormItem>
           <Select
             style={{ width: "80vw" }}
             dropdownStyle={{
@@ -61,8 +59,6 @@ function WeaponSelector() {
               };
             })}
           />
-        </FormItem>
-      </Form>
     </>
   );
 }
