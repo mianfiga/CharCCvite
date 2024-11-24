@@ -1,0 +1,14 @@
+.new_go_to_container {
+  position: absolute;
+  bottom: 7em;
+}
+
+a {
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+a:hover {
+  color: #d82596;
+}

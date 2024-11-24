@@ -4,18 +4,21 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
-import MenuBar from "./components/menu_bar/MenuBar";
-import WeaponSelect from "./components/weapon_select/WeaponSelect";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import New from "./pages/New/New";
+import NewStats from "./pages/NewStats/NewStats";
+import NewProficiencies from "./pages/NewProficiencies/NewProficiencies";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
+      <Route path="*" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/explore" element={<Explore />}/>
       <Route path="/new_1" element={<New />}/>
+      <Route path="/new_2" element={<NewStats />}/>
+      <Route path="/new_3" element={<NewProficiencies />}/>
     </Routes>
   </BrowserRouter>
 );

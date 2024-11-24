@@ -1,7 +1,6 @@
 import React from "react";
-import { Select, Form } from "antd";
+import { Select} from "antd";
 import weapons from "../../helpers/weapons";
-import FormItem from "antd/es/form/FormItem";
 import "./WeaponSelector.css"
 const handleChange = (value) => {
   console.log(`selected ${value}`);
