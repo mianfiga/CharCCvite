@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import New from "./pages/New/New";
 import NewStats from "./pages/NewStats/NewStats";
 import NewProficiencies from "./pages/NewProficiencies/NewProficiencies";
+import NewAppearance from "./pages/NewAppearance/NewAppearance";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,6 +20,7 @@ root.render(
       <Route path="/new_1" element={<New />}/>
       <Route path="/new_2" element={<NewStats />}/>
       <Route path="/new_3" element={<NewProficiencies />}/>
+      <Route path="/new_4" element={<NewAppearance />}/>
     </Routes>
   </BrowserRouter>
 );

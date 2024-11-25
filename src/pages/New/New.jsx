@@ -51,7 +51,7 @@ function New() {
           />
           <input type="text" className="medium_input" placeholder="IDEALS" />
           <input type="text" className="medium_input" placeholder="FLAWS" />
-          <textarea className="large_input" placeholder="BACKGROUND" />
+          <textarea className="large_input" placeholder="BACKSTORY" />
         </form>
         <NewGoTo />
         <a href="/new_2" className="next_new">

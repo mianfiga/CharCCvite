@@ -1,4 +1,4 @@
-.new_stats_container {
+.new_appearance_container {
   background-color: #e9e9e9;
   height: 100vh;
   display: flex;
@@ -6,12 +6,12 @@
   align-items: center;
 }
 
-.new_stats_title {
+.new_appearance_title {
   box-sizing: border-box;
   border-width: 2px 0px;
   border-style: solid;
   border-color: #000000;
-  width: 7em;
+  width: 14em;
   height: 4em;
   display: flex;
   justify-content: center;
@@ -19,21 +19,12 @@
   margin-top: 5em;
 }
 
-.new_stats_title span {
+.new_appearance_title span {
   font-size: 30px;
   text-align: center;
 }
 
-.previous_new {
-  position: absolute;
-  bottom: 6.5em;
-  left: 1.4em;
-}
-
-.new_stats_containers{
-  margin-top: 1em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 3em;
-  gap: 1.5em;
+.new_appearance_head_slider{
+    margin-top: 1em;
+    width: 80vw;
 }

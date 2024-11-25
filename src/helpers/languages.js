@@ -45,3 +45,5 @@ let languages = [
         name: "Under"
     },
 ]
+
+export default languages;
