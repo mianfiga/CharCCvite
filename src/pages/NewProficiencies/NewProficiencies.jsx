@@ -13,9 +13,26 @@ function NewProficiencies() {
         <div className="new_proficiencies_title">
           <span>PROFICIENCIES</span>
         </div>
+        <span className="new_proficiencies_header">SKILL PROFICIENCIES (SELECT 2)</span>
         <div className="new_proficiencies_checkboxes">
           {skill_proficiencies.map((s) => (
-            <Checkbox style={{ transform: "scale(1.8)" }}><span className="checkbox_span"><img className="checkbox_img" src={s.icon} alt="" />{s.name}</span></Checkbox>
+            <Checkbox style={{ transform: "scale(1.8)" }}>
+              <div className="checkbox_span">
+                <img className="checkbox_img" src={s.icon} alt="" />
+                <span>{s.name}</span>
+              </div>
+            </Checkbox>
+          ))}
+        </div>
+        <span className="new_proficiencies_header">LANGUAGES (SELECT 2)</span>
+        <div className="new_languages_checkboxes">
+          {skill_proficiencies.map((s) => (
+            <Checkbox style={{ transform: "scale(1.8)" }}>
+              <div className="checkbox_span">
+                <img className="checkbox_img" src={s.icon} alt="" />
+                <span>{s.name}</span>
+              </div>
+            </Checkbox>
           ))}
         </div>
         <a href="/new_2" className="previous_new">
