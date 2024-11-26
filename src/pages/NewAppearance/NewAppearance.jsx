@@ -4,6 +4,7 @@ import NewGoTo from "../../components/new_go_to/NewGoTo";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import { NEXT, PREVIOUS } from "../../helpers/utility_icons";
 import HeadCarousel from "../../components/head_carousel/HeadCarousel";
+import BodyCarousel from "../../components/body_carousel/BodyCarousel";
 
 function NewAppearance() {
   return (
@@ -14,6 +15,9 @@ function NewAppearance() {
         </div>
         <div className="new_appearance_head_slider">
           <HeadCarousel />
+        </div>
+        <div className="new_appearance_body_slider">
+          <BodyCarousel />
         </div>
         <NewGoTo />
         <a href="/new_3" className="previous_new">

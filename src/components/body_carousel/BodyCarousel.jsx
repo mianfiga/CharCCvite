@@ -1,11 +1,11 @@
 import React from "react";
+import "./BodyCarousel.css";
 import { Carousel } from "antd";
-import "./HeadCarousel.css";
 
-function HeadCarousel() {
-  return (
-    <>
-      <div className="head_carousel_container">
+function BodyCarousel(){
+    return(
+        <>
+        <div className="body_carousel_container">
         <Carousel arrows dotPosition="top" infinite={false} dots={false}>
           <div>
             <div className="head_container"><img className="head" src="/icons/Character/faceTest.svg" alt="hola" /></div>
@@ -17,9 +17,9 @@ function HeadCarousel() {
           <div className="head_container"><img className="head" src="/icons/Character/faceSilly.svg" alt="hola" /></div>
           </div>
         </Carousel>
-      </div>
-    </>
-  );
+        </div>
+        </>
+    )
 }
 
-export default HeadCarousel;
+export default BodyCarousel;

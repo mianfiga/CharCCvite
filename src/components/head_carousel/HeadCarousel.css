@@ -4,3 +4,15 @@
 .ant-carousel .slick-next:hover{
     color: black;
 }
+
+.head{
+    width: 200px;
+    height: 200px;
+}
+
+.head_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
