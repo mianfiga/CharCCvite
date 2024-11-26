@@ -23,7 +23,7 @@ function NewAppearance() {
         <a href="/new_3" className="previous_new">
           <img src={PREVIOUS} alt="" />
         </a>
-        <a href="/new_4" className="next_new">
+        <a href="/new_5" className="next_new">
           <img src={NEXT} alt="" />
         </a>
         <MenuBar selectedButton={"NEW"} />

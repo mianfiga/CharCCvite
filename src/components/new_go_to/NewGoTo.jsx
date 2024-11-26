@@ -33,6 +33,10 @@ function NewGoTo() {
               value: "APPEARANCE",
               label: <a href="/new_4">APPEARANCE</a>,
             },
+            {
+              value: "FINISH",
+              label: <a href="/new_5">FINISH</a>,
+            },
           ]}
         />
       </div>
