@@ -10,6 +10,8 @@ import NewStats from "./pages/NewStats/NewStats";
 import NewProficiencies from "./pages/NewProficiencies/NewProficiencies";
 import NewAppearance from "./pages/NewAppearance/NewAppearance";
 import NewFinish from "./pages/NewFinish/NewFinish";
+import WeaponSelect from "./components/weapon_select/WeaponSelect";
+import Settings from "./pages/Settings/Settings";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +25,8 @@ root.render(
       <Route path="/new_3" element={<NewProficiencies />}/>
       <Route path="/new_4" element={<NewAppearance />}/>
       <Route path="/new_5" element={<NewFinish />}/>
+      <Route path="/settings" element={<Settings />}/>
+      <Route path="/holabuenas" element={<WeaponSelect />}/>
     </Routes>
   </BrowserRouter>
 );
