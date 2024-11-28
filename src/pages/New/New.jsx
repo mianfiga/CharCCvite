@@ -1,19 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./New.css";
 import MenuBar from "../../components/menu_bar/MenuBar";
-import RaceSelector from "../../components/race_selector/RaceSelector";
-import ClassSelector from "../../components/class_selector/ClassSelector";
 import { Form, Input, InputNumber, Select } from "antd";
 
 import NewGoTo from "../../components/new_go_to/NewGoTo";
 import { NEXT } from "../../helpers/utility_icons";
 import TextArea from "antd/es/input/TextArea";
-import { useForm } from "antd/es/form/Form";
 import races from "../../helpers/races";
 import classes from "../../helpers/classes";
 
 function New() {
-  const [repintado, setRepintado] = useState(1);
   const [form] = Form.useForm();
 
   useEffect(() => form.setFieldsValue(JSON.parse(localStorage.getItem("character_info"))));
@@ -26,10 +22,7 @@ function New() {
 
   return (
     <>
-      <div
-        className="new_container"
-        onClick={() => setRepintado(repintado + 1)}
-      >
+      <div className="new_container">
         <div className="new_title">
           <span>NEW CHARACTER</span>
         </div>

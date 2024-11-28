@@ -1,7 +1,6 @@
 import React from "react";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import "./Explore.css";
-import Input from "antd/es/input/Input";
 
 function Explore() {
   return (
