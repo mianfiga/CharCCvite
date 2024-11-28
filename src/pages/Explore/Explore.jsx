@@ -7,11 +7,19 @@ function Explore() {
   return (
     <>
       <div className="explore_container">
+        <div className="explore_title">
+          <span>EXPLORE</span>
+        </div>
         <div className="explore_content">
-          <div className="explore_title">
-            <span>EXPLORE</span>
+          <form className="explore_form">
+            <input type="text" className="name_field" placeholder="NAME" />
+          </form>
+          <div className="filter_container">
+            <div className="filter_title_container">
+              <span className="filter_title">FILTER BY</span>
+              <div className="line" />
+            </div>
           </div>
-          <Input />
         </div>
         <MenuBar selectedButton={"EXPLORE"} />
       </div>

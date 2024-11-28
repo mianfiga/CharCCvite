@@ -12,6 +12,7 @@ import NewAppearance from "./pages/NewAppearance/NewAppearance";
 import NewFinish from "./pages/NewFinish/NewFinish";
 import WeaponSelect from "./components/weapon_select/WeaponSelect";
 import Settings from "./pages/Settings/Settings";
+import Library from "./pages/Library/Library";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="*" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/explore" element={<Explore />}/>
+      <Route path="/library" element={<Library />}/>
       <Route path="/new_1" element={<New />}/>
       <Route path="/new_2" element={<NewStats />}/>
       <Route path="/new_3" element={<NewProficiencies />}/>

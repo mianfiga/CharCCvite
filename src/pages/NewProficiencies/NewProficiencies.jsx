@@ -6,6 +6,8 @@ import { NEXT, PREVIOUS } from "../../helpers/utility_icons";
 import Checkbox from "antd/es/checkbox/Checkbox";
 import skill_proficiencies from "../../helpers/skill_proficiencies";
 import languages from "../../helpers/languages";
+import { Form } from "antd";
+import { ACROBATICS } from "../../helpers/proficiencies_icons";
 
 function NewProficiencies() {
   return (
