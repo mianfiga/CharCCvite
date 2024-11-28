@@ -6,7 +6,7 @@ import races from "../../helpers/races";
 function RaceSelector() {
   return (
     <>
-      <Select
+      <Select name="race"
         style={{ width: "30vw" }}
         dropdownStyle={{
           backgroundColor: "#515151",
