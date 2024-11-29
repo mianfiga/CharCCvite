@@ -1,58 +1,77 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./InfoContent.css";
 
 function InfoContent() {
+  // Estado para almacenar la información del personaje
+  const [characterInfo, setCharacterInfo] = useState({
+    name: "",
+    race: "",
+    class: "",
+    age: 0,
+    level: 0,
+    factions: "",
+    personality: "",
+    ideals: "",
+    flaws: "",
+    bonds: "",
+    backstory: "",
+  });
+
+  useEffect(() => {
+    // Recuperamos los datos del personaje de localStorage
+    const storedCharacterInfo = localStorage.getItem("character_info");
+    
+    if (storedCharacterInfo) {
+      const parsedCharacterInfo = JSON.parse(storedCharacterInfo);
+      setCharacterInfo(parsedCharacterInfo); // Establecemos los datos en el estado
+    }
+  }, []);
+
   return (
     <>
       <div className="info_content_container">
         <div className="info_display_medium">
-          <span>NAME</span>
+          <span>{characterInfo.name || "NAME"}</span>
         </div>
         <div className="info_display_small_container">
           <div className="info_display_small">
-            <span>RACE</span>
+            <span>{characterInfo.race || "RACE"}</span>
           </div>
           <div className="info_display_small">
-            <span>SUBRACE</span>
-          </div>
-          <div className="info_display_small">
-            <span>CLASS</span>
+            <span>{characterInfo.class || "CLASS"}</span>
           </div>
         </div>
         <div className="info_display_number_container">
           <div className="info_number">
             <span className="info_number_text">AGE</span>
             <div className="info_number_number">
-              <span>0</span>
+              <span>{characterInfo.age || 0}</span>
             </div>
           </div>
           <div className="info_number">
             <span className="info_number_text">LEVEL</span>
             <div className="info_number_number">
-              <span>0</span>
+              <span>{characterInfo.level || 0}</span>
             </div>
           </div>
         </div>
         <div className="info_display_medium">
-          <span>FACTIONS</span>
+          <span>{characterInfo.factions || "FACTIONS"}</span>
         </div>
         <div className="info_display_medium">
-          <span>PERSONALITY TRAITS</span>
+          <span>{characterInfo.personality || "PERSONALITY TRAITS"}</span>
         </div>
         <div className="info_display_medium">
-          <span>IDEALS</span>
+          <span>{characterInfo.ideals || "IDEALS"}</span>
         </div>
         <div className="info_display_medium">
-          <span>FLAWS</span>
+          <span>{characterInfo.flaws || "FLAWS"}</span>
         </div>
         <div className="info_display_medium">
-          <span>BONDS</span>
-        </div>
-        <div className="info_display_medium">
-          <span>BACKGROUND</span>
+          <span>{characterInfo.bonds || "BONDS"}</span>
         </div>
         <div className="info_display_large">
-          <span>BACKSTORY</span>
+          <span>{characterInfo.backstory || "BACKSTORY"}</span>
         </div>
       </div>
     </>

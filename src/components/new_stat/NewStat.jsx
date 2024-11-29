@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./NewStat.css";
 import { MINUS, PLUS } from "../../helpers/utility_icons";
 
-function NewStat({ statIcon, statName, statValue }) {
+function NewStat({ statIcon, statName, statValue, onChange }) {
   const [changedValue, setChangedValue] = useState(statValue);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -23,11 +23,15 @@ function NewStat({ statIcon, statName, statValue }) {
 
   const plusStat = () => {
     handleDebouncedClick(() => {
-      if (changedValue < 30) {
+      if (changedValue < 20) {
         setChangedValue((prevValue) => prevValue + 1);
       }
     });
   };
+
+  useEffect(() => {
+    onChange(statName, changedValue);
+  }, [changedValue, statName, onChange]);
 
   return (
     <div className="new_stat_container">

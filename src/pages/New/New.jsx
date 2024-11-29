@@ -35,7 +35,7 @@ function New() {
               <Input placeholder="NAME" className="medium_input" />
             </Form.Item>
             <div className="new_selectors">
-              <Form.Item name="race">
+              <Form.Item name="race" style={{ marginBottom: "0px" }}>
                 <Select
                   name="race"
                   style={{ width: "30vw" }}
@@ -53,7 +53,7 @@ function New() {
                   })}
                 />
               </Form.Item>
-              <Form.Item name="class">
+              <Form.Item name="class"  style={{ marginBottom: "0px" }}>
                 <Select
                   style={{ width: "30vw" }}
                   dropdownStyle={{
