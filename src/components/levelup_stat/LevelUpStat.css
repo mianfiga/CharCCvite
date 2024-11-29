@@ -29,6 +29,7 @@
   height: 26px;
   align-self: last baseline;
   margin: auto;
+  cursor: pointer;
 }
 
 .stat_up_container span {

@@ -12,10 +12,15 @@ import classes from "../../helpers/classes";
 function New() {
   const [form] = Form.useForm();
 
-  useEffect(() => form.setFieldsValue(JSON.parse(localStorage.getItem("character_info"))));
+  useEffect(() =>
+    form.setFieldsValue(JSON.parse(localStorage.getItem("character_info")))
+  );
 
-  function saveValue(){
-    localStorage.setItem("character_info", JSON.stringify(form.getFieldsValue()));
+  function saveValue() {
+    localStorage.setItem(
+      "character_info",
+      JSON.stringify(form.getFieldsValue())
+    );
   }
 
   console.log(form.getFieldsValue());
@@ -27,7 +32,8 @@ function New() {
           <span>NEW CHARACTER</span>
         </div>
         <div className="new_form">
-          <Form onChange={saveValue}
+          <Form
+            onChange={saveValue}
             form={form}
             style={{ display: "flex", flexDirection: "column", gap: "1em" }}
           >
@@ -53,7 +59,7 @@ function New() {
                   })}
                 />
               </Form.Item>
-              <Form.Item name="class"  style={{ marginBottom: "0px" }}>
+              <Form.Item name="class" style={{ marginBottom: "0px" }}>
                 <Select
                   style={{ width: "30vw" }}
                   dropdownStyle={{
@@ -73,26 +79,30 @@ function New() {
             </div>
             <div className="new_numbers">
               <span className="numbers_title">AGE</span>
-              <InputNumber
-                style={{
-                  backgroundColor: "#515151",
-                  color: "#FFFFF",
-                  border: "1px solid black",
-                  borderRadius: "15px",
-                }}
-                min={0}
-              />
+              <Form.Item name={"age"}  style={{ marginBottom: "0" }}>
+                <InputNumber
+                  style={{
+                    backgroundColor: "#515151",
+                    color: "#FFFFF",
+                    border: "1px solid black",
+                    borderRadius: "15px",
+                  }}
+                  min={0}
+                />
+              </Form.Item>
               <span className="numbers_title">LEVEL</span>
-              <InputNumber
-                style={{
-                  backgroundColor: "#515151",
-                  color: "#FFFFF",
-                  border: "1px solid black",
-                  borderRadius: "15px",
-                }}
-                max={20}
-                min={1}
-              />
+              <Form.Item name={"level"} style={{ marginBottom: "0" }}>
+                <InputNumber
+                  style={{
+                    backgroundColor: "#515151",
+                    color: "#FFFFF",
+                    border: "1px solid black",
+                    borderRadius: "15px",
+                  }}
+                  max={20}
+                  min={1}
+                />
+              </Form.Item>
             </div>
             <Form.Item name="factions" className="medium_input_fix">
               <Input placeholder="FACTIONS" className="medium_input" />

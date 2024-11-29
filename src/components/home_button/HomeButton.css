@@ -9,6 +9,8 @@
   align-items: center;
   background-color: white;
   transition: all 1s;
+  cursor: pointer;
+  
 }
 
 .button_container img {
@@ -27,10 +29,16 @@
   z-index: 999;
   overflow: visible;
   top: 1em;
+  cursor: default;
+}
+
+.previous_container {
+  cursor: pointer;
 }
 
 .previous_hidden {
   visibility: hidden;
+  cursor: default;
 }
 
 .button_expanded img {

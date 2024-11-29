@@ -47,18 +47,22 @@
     width: 9em;
     height: 1.5em;
     color: white;
+    cursor: pointer;
 }
 
 .available_popup{
     background-color: #515151;
     width: 79vw;
-    font-size: 19px;
+    font-size: 17px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    text-justify: center;
     border: 1px solid black;
     border-radius: 20px;
+    height: 1.5em;
 }
 
 .stats_grid{
@@ -67,7 +71,7 @@
     gap: 0.5em;
 }
 
-.spells_unlocked_button{
+/* .spells_unlocked_button{
     margin: 0.5em;
     display: flex;
     justify-content: center;
@@ -78,4 +82,4 @@
     width: 12em;
     height: 1.5em;
     color: white;
-}
+} */

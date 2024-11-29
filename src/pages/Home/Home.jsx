@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import "./Home.css";
 import HomeButton from "../../components/home_button/HomeButton";
@@ -24,12 +24,22 @@ import LevelUpContent from "../../components/levelup_content/LevelUpContent";
 import EquipmentContent from "../../components/equipment_content/EquipmentContent";
 
 function Home() {
+  const [charName, setCharName] = useState("Character Name");
+
+  useEffect(() => {
+    const storedCharacterInfo = localStorage.getItem("character_info");
+    if (storedCharacterInfo) {
+      const parsedCharacterInfo = JSON.parse(storedCharacterInfo);
+      setCharName(parsedCharacterInfo.name || "CREATE A CHARACTER");
+    }
+  }, []);
+
   return (
     <>
       <div className="home_container">
         <div className="home_content">
           <div className="char_name">
-            <span>PEPE VIYUELA</span>
+            <span>{charName}</span>
           </div>
           <img
             src="/icons/Character/character.svg"
@@ -43,7 +53,7 @@ function Home() {
             <InfoContent />
           </HomeButton>
           <HomeButton image={LEVELUP} text={LTEXT} className="level_button">
-            <LevelUpContent expLevel={2} expCount={50} />
+            <LevelUpContent expCount={0} />
           </HomeButton>
           <HomeButton image={STATS} text={STEXT} className="stats_button">
             <StatsContent />

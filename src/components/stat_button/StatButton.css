@@ -5,7 +5,7 @@
     border: 1px solid #A6A6A6;
     border-radius: 16px;
     width: 7.6em;
-    
+    transition: all 1s;
 }
 
 .stat_button_container img{
@@ -25,8 +25,11 @@
 }
 
 .advantage_container img{
-    align-self: last baseline;
     margin: auto;
+    cursor: pointer;
+    margin: 0;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .advantage_container span{
@@ -34,4 +37,71 @@
     color: white;
     width: 36px;
     text-align: center;
+}
+
+.stat_button_throw_button{
+    color: white;
+    background-color: #d82596;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 18px;
+    text-justify: center;
+    text-align: center;
+    width: 5em;
+    cursor: pointer;
+}
+
+.stat_button_throw {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.stat_button_content.stat_button_content_hidden{
+    visibility: hidden;
+    height: 0px;
+}
+
+.stat_previous_container{
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+    cursor: pointer;
+}
+
+.stat_button_container.stat_button_expanded{
+    height: 48vh;
+    position: absolute;
+    background-color: white;
+    width: 60vw;
+    justify-self: center;
+    align-self: center;
+}
+
+.stat_button_throw_dice{
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.dice_result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-justify: center;
+    width: 80px;
+    height: 80px;
+    background-image: url("/public/icons/Dice/d20black.svg");
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.throw_result{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
 }
