@@ -8,9 +8,10 @@
   display: flex !important;
   align-items: center;
   justify-content: center;
+  height: 70vh;
 }
 
 .body_container img {
-  width: 70vw;
-  height: 70vh;
+  width: 400px;
+  height: 400px;
 }

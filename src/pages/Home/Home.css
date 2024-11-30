@@ -29,10 +29,20 @@
 .char_name span {
   font-size: 30px;
   text-align: center;
+  font-weight: 600;
 }
 
-.char_image {
-  width: 340px;
-  height: 574.72px;
-  margin-top: 2em;
+.character_img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.character_head{
+  width: 175px;
+}
+
+.character_body{
+  width: 350px;
 }

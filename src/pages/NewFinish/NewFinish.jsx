@@ -3,29 +3,36 @@ import "./NewFinish.css";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import NewGoTo from "../../components/new_go_to/NewGoTo";
 import { CONFIRM, PREVIOUS } from "../../helpers/utility_icons";
-import stats from "../../helpers/stats"; // Este es el array que contiene las estadísticas con sus iconos
+import stats from "../../helpers/stats";
 import StatInfo from "../../components/stat_info/StatInfo";
 
 function NewFinish() {
   const [characterInfo, setCharacterInfo] = useState({
-    name: '',
-    race: '',
-    class: '',
+    name: "",
+    race: "",
+    class: "",
     stats: {},
   });
 
+  const [characterAppearance, setCharacterAppearance] = useState({
+    head: "",
+    body: "",
+  });
+
   useEffect(() => {
-    // Recuperamos los datos del personaje y sus estadísticas de localStorage
     const storedCharacterInfo = localStorage.getItem("character_info");
     const storedCharacterStats = localStorage.getItem("character_stats");
+    const storedCharacterAppearance = localStorage.getItem(
+      "character_appearance"
+    );
 
     if (storedCharacterInfo) {
       const parsedCharacterInfo = JSON.parse(storedCharacterInfo);
       setCharacterInfo((prevInfo) => ({
         ...prevInfo,
-        name: parsedCharacterInfo.name || '',
-        race: parsedCharacterInfo.race || '',
-        class: parsedCharacterInfo.class || '',
+        name: parsedCharacterInfo.name || "",
+        race: parsedCharacterInfo.race || "",
+        class: parsedCharacterInfo.class || "",
       }));
     }
 
@@ -33,8 +40,16 @@ function NewFinish() {
       const parsedCharacterStats = JSON.parse(storedCharacterStats);
       setCharacterInfo((prevInfo) => ({
         ...prevInfo,
-        stats: parsedCharacterStats || {}, // Asignamos las estadísticas
+        stats: parsedCharacterStats || {},
       }));
+    }
+
+    if (storedCharacterAppearance) {
+      const parsedCharacterAppearance = JSON.parse(storedCharacterAppearance);
+      setCharacterAppearance({
+        head: parsedCharacterAppearance.head || "",
+        body: parsedCharacterAppearance.body || "",
+      });
     }
   }, []);
 
@@ -47,9 +62,9 @@ function NewFinish() {
         <div className="new_finish_stats">
           {stats.map((stat) => (
             <StatInfo
-              key={stat.name} // Usamos el nombre de la estadística como clave
-              statImage={stat.icon} // Icono correspondiente de la estadística
-              statValue={characterInfo.stats[stat.name.toLowerCase()]} // Valor de la estadística de character_stats
+              key={stat.name}
+              statImage={stat.icon}
+              statValue={characterInfo.stats[stat.name.toLowerCase()]}
             />
           ))}
         </div>
@@ -63,11 +78,22 @@ function NewFinish() {
           <div className="new_finish_label">
             <span>{characterInfo.class || "CLASS"}</span>
           </div>
-          <img
-            className="new_finish_img"
-            src="/icons/Character/character.svg"
-            alt="Character"
-          />
+          <div className="character_icon">
+            {characterAppearance.head && (
+              <img
+                src={`/icons/Character/heads/${characterAppearance.head}`}
+                alt="Head"
+                className="new_finish_head"
+              />
+            )}
+            {characterAppearance.body && (
+              <img
+                src={`/icons/Character/bodies/${characterAppearance.body}`}
+                alt="Body"
+                className="new_finish_body"
+              />
+            )}
+          </div>
           <a href="/home">
             <div className="new_confirm_button">
               <img src={CONFIRM} alt="Confirm" />

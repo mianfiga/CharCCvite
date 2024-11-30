@@ -9,10 +9,9 @@ function LevelUpContent() {
   const [characterStats, setCharacterStats] = useState({});
   const [characterInfo, setCharacterInfo] = useState({});
   const [availablePoints, setAvailablePoints] = useState(0);
-  const [expCount, setExpCount] = useState(0); // Experiencia inicial
+  const [expCount, setExpCount] = useState(0);
 
   useEffect(() => {
-    // Cargar estadísticas y nivel desde localStorage
     const storedStats = localStorage.getItem("character_stats");
     if (storedStats) {
       setCharacterStats(JSON.parse(storedStats));
@@ -67,8 +66,8 @@ function LevelUpContent() {
         <Progress
           percent={(expCount / 100) * 100}
           showInfo={false}
-          size={[350, 15]}
           strokeColor="#D82596"
+          className="exp_bar"
         />
       </Flex>
       <div className="levelup_column">
@@ -103,7 +102,7 @@ function LevelUpContent() {
             />
           ))}
         </div>
-        <div className="spells_unlocked_button">NEW SPELLS UNLOCKED</div>
+        {/* <div className="spells_unlocked_button">NEW SPELLS UNLOCKED</div> */}
       </div>
     </div>
   );

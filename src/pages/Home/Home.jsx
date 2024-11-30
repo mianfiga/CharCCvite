@@ -25,12 +25,25 @@ import EquipmentContent from "../../components/equipment_content/EquipmentConten
 
 function Home() {
   const [charName, setCharName] = useState("Character Name");
+  const [characterAppearance, setCharacterAppearance] = useState({
+    head: "",
+    body: "",
+  });
 
   useEffect(() => {
     const storedCharacterInfo = localStorage.getItem("character_info");
     if (storedCharacterInfo) {
       const parsedCharacterInfo = JSON.parse(storedCharacterInfo);
       setCharName(parsedCharacterInfo.name || "CREATE A CHARACTER");
+    }
+
+    const storedCharacterAppearance = localStorage.getItem("character_appearance");
+    if (storedCharacterAppearance) {
+      const parsedAppearance = JSON.parse(storedCharacterAppearance);
+      setCharacterAppearance({
+        head: parsedAppearance.head || "",
+        body: parsedAppearance.body || "",
+      });
     }
   }, []);
 
@@ -41,11 +54,22 @@ function Home() {
           <div className="char_name">
             <span>{charName}</span>
           </div>
-          <img
-            src="/icons/Character/character.svg"
-            alt="character"
-            className="char_image"
-          />
+          <div className="character_img">
+            {characterAppearance.head && (
+              <img
+                src={`/icons/Character/heads/${characterAppearance.head}`}
+                alt="Head"
+                className="character_head"
+              />
+            )}
+            {characterAppearance.body && (
+              <img
+                src={`/icons/Character/bodies/${characterAppearance.body}`}
+                alt="Body"
+                className="character_body"
+              />
+            )}
+          </div>
           <HomeButton image={THROWS} text={TTEXT} className="throws_button">
             <ThrowsContent />
           </HomeButton>

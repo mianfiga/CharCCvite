@@ -1,12 +1,12 @@
 let faces = [
     {
-        src: "/icons/Character/0.svg",
+        src: "/icons/Character/heads/0.svg",
     },
     {
-        src: "/icons/Character/1.svg",
+        src: "/icons/Character/heads/1.svg",
     },
     {
-        src: "/icons/Character/2.svg",
+        src: "/icons/Character/heads/2.svg",
     },
 ];
 

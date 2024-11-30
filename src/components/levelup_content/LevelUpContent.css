@@ -71,6 +71,11 @@
     gap: 0.5em;
 }
 
+.exp_bar{
+    width: 80vw;
+    height: 50px;
+}
+
 /* .spells_unlocked_button{
     margin: 0.5em;
     display: flex;
