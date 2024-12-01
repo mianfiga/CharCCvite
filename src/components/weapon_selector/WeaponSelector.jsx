@@ -2,9 +2,6 @@ import React from "react";
 import { Select} from "antd";
 import weapons from "../../helpers/weapons";
 import "./WeaponSelector.css"
-const handleChange = (value) => {
-  console.log(`selected ${value}`);
-};
 
 function WeaponSelector() {
   return (
@@ -19,7 +16,6 @@ function WeaponSelector() {
             }}
             placement="bottomRight"
             defaultValue="Select your weapon"
-            onChange={handleChange}
             labelRender={(value) => value.value}
             dropdownRender={(menu) => {
               return (
