@@ -24,7 +24,7 @@ import LevelUpContent from "../../components/levelup_content/LevelUpContent";
 import EquipmentContent from "../../components/equipment_content/EquipmentContent";
 
 function Home() {
-  const [charName, setCharName] = useState("Character Name");
+  const [charName, setCharName] = useState("CREATE A CHARACTER");
   const [characterAppearance, setCharacterAppearance] = useState({
     head: "",
     body: "",
