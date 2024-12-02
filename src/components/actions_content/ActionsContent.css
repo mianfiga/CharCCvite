@@ -34,6 +34,7 @@
   justify-content: center;
   align-items: center;
   gap: 1em;
+  color: black;
 }
 
 .damage_throw {
@@ -53,6 +54,7 @@
   text-justify: center;
   width: 18vw;
   padding: 3px;
+  cursor: pointer;
 }
 
 .damage_throw_button{
@@ -64,4 +66,12 @@
   text-justify: center;
   width: 18vw;
   padding: 3px;
+  cursor: pointer;
+}
+
+.actions_result{
+  font-size: 22px;
+  text-align: center;
+  font-weight: 600;
+  width: 7em;
 }

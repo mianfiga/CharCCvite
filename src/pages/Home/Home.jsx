@@ -15,6 +15,7 @@ import {
   ATEXT,
   LTEXT,
   ETEXT,
+  DELETE,
 } from "../../helpers/home_icons";
 import ThrowsContent from "../../components/throws_content/ThrowsContent";
 import InfoContent from "../../components/info_content/InfoContent";
@@ -37,7 +38,9 @@ function Home() {
       setCharName(parsedCharacterInfo.name || "CREATE A CHARACTER");
     }
 
-    const storedCharacterAppearance = localStorage.getItem("character_appearance");
+    const storedCharacterAppearance = localStorage.getItem(
+      "character_appearance"
+    );
     if (storedCharacterAppearance) {
       const parsedAppearance = JSON.parse(storedCharacterAppearance);
       setCharacterAppearance({
@@ -46,6 +49,11 @@ function Home() {
       });
     }
   }, []);
+
+  const handleDelete = () => {
+    localStorage.clear();
+    window.location.reload();
+  };
 
   return (
     <>
@@ -85,9 +93,10 @@ function Home() {
           <HomeButton image={ACTIONS} text={ATEXT} className="actions_button">
             <ActionsContent />
           </HomeButton>
-          <HomeButton image={EQUIPMENT} text={ETEXT} className="equipment_button">
-            <EquipmentContent />
-          </HomeButton>
+          <div className="delete_button" onClick={handleDelete}>
+            <img src={DELETE} alt="" />
+            <span>DELETE</span>
+          </div>
         </div>
         <MenuBar selectedButton={"HOME"} />
       </div>

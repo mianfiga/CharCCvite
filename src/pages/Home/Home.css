@@ -46,3 +46,26 @@
 .character_body{
   width: 350px;
 }
+
+.delete_button{
+  width: 100px;
+  height: 140px;
+  border: 1px solid #a6a6a6;
+  border-radius: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: all 1s;
+  cursor: pointer;
+  position: absolute;
+  top: 41em;
+  right: 0.5em;
+}
+
+.delete_button img{
+  height: min-content;
+  width: min-content;
+  margin-bottom: 2px;
+}
