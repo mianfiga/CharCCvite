@@ -24,3 +24,88 @@
   text-align: center;
   font-weight: 700;
 }
+
+.settings_content{
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.user_buttons{
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.log_in_button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #D82596;
+  padding: 5px;
+  color: white;
+  width: 6.5em;
+  cursor: pointer;
+}
+
+.log_in_button img{
+  margin-right: 5px;
+}
+
+.sign_in_button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #D82596;
+  padding: 5px;
+  color: white;
+  width: 6.5em;
+  cursor: pointer;
+}
+
+.sign_in_button img{
+  margin-right: 5px;
+}
+
+.line{
+  width: 70vw;
+}
+
+.more_options{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.option_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.option_button {
+  color: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #D82596;
+  padding: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 7em;
+  text-align: center;
+  cursor: pointer;
+}
+
+.option_img{
+  width: 37px;
+}
