@@ -38,3 +38,9 @@
   column-gap: 3em;
   gap: 1.5em;
 }
+
+@media only screen and (min-width: 600px) {
+  .new_stats_containers{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

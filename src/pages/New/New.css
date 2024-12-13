@@ -27,9 +27,6 @@
 
 .new_form {
   margin-top: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .medium_input {
@@ -81,12 +78,15 @@
 .new_selectors {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 4.5em;
+  width: 75vw;
 }
 
 .new_numbers {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 1.4em;
 }
@@ -111,4 +111,14 @@
 
 .ant-select-dropdown .ant-select-item {
   color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .large_input{
+    height: 1em;
+  }
+
+  textarea .ant-input{
+    height: 5em;
+  }
 }

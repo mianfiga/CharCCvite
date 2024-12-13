@@ -69,3 +69,17 @@
   width: min-content;
   margin-bottom: 2px;
 }
+
+@media only screen and (min-width: 600px) {
+  .delete_button{
+    top: 30em;
+  }
+
+  .character_body{
+    width: 60%;
+  }
+
+  .character_head{
+    width: 35%;
+  }
+}

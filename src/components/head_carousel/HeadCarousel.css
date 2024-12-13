@@ -1,18 +1,23 @@
 .ant-carousel .slick-prev,
 .ant-carousel .slick-next,
 .ant-carousel .slick-prev:hover,
-.ant-carousel .slick-next:hover{
-    color: black;
+.ant-carousel .slick-next:hover {
+  color: black;
 }
 
-.head{
-    width: 200px;
-    height: 200px;
+.head {
+  width: 200px;
+  height: 200px;
 }
 
-.head_container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.head_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .head_container img {
+    width: 13%;
+  }
 }

@@ -92,3 +92,10 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+@media only screen and (min-width: 600px) {
+    .new_finish_stats {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

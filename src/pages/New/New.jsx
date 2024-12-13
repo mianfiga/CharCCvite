@@ -127,6 +127,7 @@ function New() {
                 placeholder="BACKSTORY"
                 rows={5}
                 className="large_input"
+                style={{ height: "7vh" }}
               />
             </Form.Item>
           </Form>
