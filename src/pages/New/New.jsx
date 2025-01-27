@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./New.css";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import { Form, Input, InputNumber, Select, message } from "antd";
@@ -70,7 +70,7 @@ function New() {
                     border: "1px solid black",
                     borderRadius: "20px",
                   }}
-                  placeholder="Race"
+                  placeholder="RACE"
                   options={races.map((m) => ({
                     value: m.name,
                     label: <span className="race_name">{m.name}</span>,
@@ -89,7 +89,7 @@ function New() {
                     border: "1px solid black",
                     borderRadius: "20px",
                   }}
-                  placeholder="Class"
+                  placeholder="CLASS"
                   options={classes.map((m) => ({
                     value: m.name,
                     label: <span className="class_name">{m.name}</span>,

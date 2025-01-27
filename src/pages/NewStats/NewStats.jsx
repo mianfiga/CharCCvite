@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import "./NewStats.css";
 import MenuBar from "../../components/menu_bar/MenuBar";
 import { NEXT, PREVIOUS } from "../../helpers/utility_icons";
@@ -36,7 +36,6 @@ function NewStats() {
   const mostrarCosas = () => {
     console.log(localStorage.getItem("character_stats"));
   }
-
   return (
     <>
       <div className="new_stats_container">
@@ -62,7 +61,7 @@ function NewStats() {
           className="next_new"
           onClick={handleSaveStats}
         >
-          <img src={NEXT} alt="" />
+          <img src={NEXT} alt="next" />
         </a>
         <NewGoTo />
         <MenuBar selectedButton={"NEW"} />

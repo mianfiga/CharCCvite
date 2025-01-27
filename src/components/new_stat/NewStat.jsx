@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./NewStat.css";
 import { MINUS, PLUS } from "../../helpers/utility_icons";
 
