@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./ThrowsContent.css";
 import StatButton from "../stat_button/StatButton";
 import stats from "../../helpers/stats";
@@ -7,7 +7,6 @@ function ThrowsContent() {
   const [characterStats, setCharacterStats] = useState({});
 
   useEffect(() => {
-    // Cargar estadísticas desde localStorage al montar el componente
     const storedStats = localStorage.getItem("character_stats");
     if (storedStats) {
       setCharacterStats(JSON.parse(storedStats));
@@ -15,11 +14,10 @@ function ThrowsContent() {
   }, []);
 
   const handleStatChange = (statName, change) => {
-    // Actualizar estadística en el estado y localStorage
     setCharacterStats((prevStats) => {
       const updatedStats = {
         ...prevStats,
-        [statName]: Math.max(0, (prevStats[statName] || 0) + change), // Evitar valores negativos
+        [statName]: Math.max(0, (prevStats[statName] || 0) + change),
       };
       localStorage.setItem("character_stats", JSON.stringify(updatedStats));
       return updatedStats;

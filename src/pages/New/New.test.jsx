@@ -32,35 +32,35 @@ describe("New Character Form", () => {
     );
 
     const nameInput = screen.getAllByPlaceholderText("NAME");
-    fireEvent.change(nameInput[0], { target: { value: "Aragorn" } });
+    fireEvent.change(nameInput[0], { target: { value: "antonio" } });
 
     const factionsInput = screen.getAllByPlaceholderText("FACTIONS");
-    fireEvent.change(factionsInput[0], { target: { value: "The Fellowship" } });
+    fireEvent.change(factionsInput[0], { target: { value: "bar de antonio" } });
 
     const personalityInput =
       screen.getAllByPlaceholderText("PERSONALITY TRAITS");
     fireEvent.change(personalityInput[0], {
-      target: { value: "Brave and loyal" },
+      target: { value: "es antonio" },
     });
 
     const idealsInput = screen.getAllByPlaceholderText("IDEALS");
     fireEvent.change(idealsInput[0], {
-      target: { value: "Honor and Justice" },
+      target: { value: "seguir siendo antonio" },
     });
 
     const flawsInput = screen.getAllByPlaceholderText("FLAWS");
     fireEvent.change(flawsInput[0], {
-      target: { value: "Doubt in his own destiny" },
+      target: { value: "racista hacia los gnomos" },
     });
 
     const bondsInput = screen.getAllByPlaceholderText("BONDS");
     fireEvent.change(bondsInput[0], {
-      target: { value: "Protect the people of Middle Earth" },
+      target: { value: "pce, antolin" },
     });
 
     const backstoryInput = screen.getAllByPlaceholderText("BACKSTORY");
     fireEvent.change(backstoryInput[0], {
-      target: { value: "A ranger who is destined to be king of Gondor." },
+      target: { value: "nacio y le llamaron antonio" },
     });
 
     const nextButtons = screen.getAllByAltText("next");
@@ -68,13 +68,13 @@ describe("New Character Form", () => {
 
     const storedData = JSON.parse(localStorage.getItem("character_info"));
     expect(storedData).toEqual({
-      name: "Aragorn",
-      factions: "The Fellowship",
-      personality: "Brave and loyal",
-      ideals: "Honor and Justice",
-      flaws: "Doubt in his own destiny",
-      bonds: "Protect the people of Middle Earth",
-      backstory: "A ranger who is destined to be king of Gondor.",
+      name: "antonio",
+      factions: "bar de antonio",
+      personality: "es antonio",
+      ideals: "seguir siendo antonio",
+      flaws: "racista hacia los gnomos",
+      bonds: "pce, antolin",
+      backstory: "nacio y le llamaron antonio",
     });
   });
 });

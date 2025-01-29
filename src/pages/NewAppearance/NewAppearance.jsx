@@ -1,4 +1,3 @@
-import React from "react";
 import "./NewAppearance.css";
 import NewGoTo from "../../components/new_go_to/NewGoTo";
 import MenuBar from "../../components/menu_bar/MenuBar";

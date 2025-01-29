@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./NewProficiencies.css";
 import NewGoTo from "../../components/new_go_to/NewGoTo";
 import MenuBar from "../../components/menu_bar/MenuBar";
@@ -87,10 +87,10 @@ function NewProficiencies() {
           ))}
         </div>
         <a href="/new_2" className="previous_new">
-          <img src={PREVIOUS} alt="" />
+          <img src={PREVIOUS} alt="previous" />
         </a>
         <a href="/new_4" className="next_new" onClick={handleSave}>
-          <img src={NEXT} alt="" />
+          <img src={NEXT} alt="next" />
         </a>
         <NewGoTo />
         <MenuBar selectedButton={"NEW"} />

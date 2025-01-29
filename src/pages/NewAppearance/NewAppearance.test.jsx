@@ -1,24 +1,25 @@
-import { render, screen, within, fireEvent } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { beforeEach, describe, expect, it } from "vitest";
 import NewAppearance from "./NewAppearance";
 
 describe("NewAppearance Page", () => {
-    beforeEach(() => {
-        localStorage.clear();
-    });
+  beforeEach(() => {
+    localStorage.clear();
+  });
 
-    it("changes the appearance selected", () => {
-        render(
-            <MemoryRouter>
-                <NewAppearance />
-            </MemoryRouter>
-        );
-        const headButton = screen.getAllByRole("button")[1];
-        fireEvent.click(headButton);
-        const nextButton = screen.getByAltText("next");
-        fireEvent.click(nextButton);
-        const savedFace = JSON.parse(localStorage.getItem("charachter_appearance"));
-        console.log(savedFace);
-    });
+  it("changes the head appearance when navigating through the carousel", async () => {
+    render(
+      <MemoryRouter>
+        <NewAppearance />
+      </MemoryRouter>
+    );
+
+    const headNextButton = screen.getAllByRole("button")[1];
+    fireEvent.click(headNextButton);
+    await new Promise((resolve) => setTimeout(resolve, 100));
+    const savedAppearance = JSON.parse(localStorage.getItem("character_appearance"));
+    expect(savedAppearance).toBeDefined();
+    expect(savedAppearance.head).toBe("1.svg"); 
+  });
 });
