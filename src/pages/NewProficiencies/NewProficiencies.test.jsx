@@ -31,9 +31,9 @@ describe("NewProficiencies page", () => {
       localStorage.getItem("character_languages")
     );
 
-    expect(savedProficiencies[0]).toBe("Acrobatics");
-    expect(savedProficiencies[1]).toBe("Medicine");
-    expect(savedLanguages[0]).toBe("Orcish");
+    expect(savedProficiencies[0]).toBe("Animal care");
+    expect(savedProficiencies[1]).toBe("Acrobatics");
+    expect(savedLanguages[0]).toBe("Depp Speech");
 
   });
 });

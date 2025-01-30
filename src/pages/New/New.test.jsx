@@ -24,7 +24,7 @@ describe("New Character Form", () => {
     screen.getByPlaceholderText("BACKSTORY");
   });
 
-  it("proceeds to the next step when all fields are valid", () => {
+  it("puts information in the fields and check localStorage", () => {
     render(
       <MemoryRouter>
         <New />
